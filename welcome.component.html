@@ -1,0 +1,13 @@
+<p>Welcome {{username}}</p>
+{{"JBK" | lowercase}}<br>
+{{birthdate | date}}<br>
+{{birthdate | date:"dd-MM-yyyy"}}<br>
+{{"TheKiranAcademy"| slice: 3:8 }}<br>
+{{"JavaByKiran"| slice: 6:11}}<br>
+{{"sachin" | title:" male"}}<br>
+{{"bhagyshri" | title:" female"}}<br>
+<img [src]="imgurl"width="100" height="100">
+<ul *ngFor="let person of persons"[style.color]="getColor(person.country)">
+    <li>{{person.name}} {{person.country}}</li>
+</ul>
+<p *ngIf="show">variable will decide whether I will be visible or not</p>

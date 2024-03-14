@@ -1,0 +1,21 @@
+.btn{
+    padding: 10px 15px;
+    background-color:black;
+    color:yellow;
+    border-radius: 10%;
+    font-size: 15px;
+cursor: pointer;
+}
+h2{
+    background-color: blueviolet;
+    text-align: center;
+    color: hotpink;
+    border: 4px double black;
+    border-radius: 10px;
+}
+button:hover
+{
+background-color:yellowgreen;
+color: red;
+
+}

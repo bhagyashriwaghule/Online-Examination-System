@@ -1,0 +1,22 @@
+input
+{
+    display:block;
+    padding: 5px;
+
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 10px;
+
+}
+nav{
+
+
+    background-color: black;
+}
+a:hover
+{
+    background-color:blue;
+}

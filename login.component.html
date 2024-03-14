@@ -1,0 +1,17 @@
+<body>
+    <form>
+        <input type="text" name="username" placeholder="enter username"[(ngModel)]="user.username"><br><br>
+        <input type="password" name="password" placeholder="enter password"[(ngModel)]="user.password"><br><br>
+        <br><br>
+        <select name="subject"[(ngModel)]="subject">
+            <option value="maths">maths</option>
+            <option value="java">java</option>
+            <option value="gk">Genral Knowlwgde</option>
+        </select>
+        <br><br>
+
+    <input type=button value=login (click)="validate()" class="btn">
+ </form>
+ {{message}}
+ 
+</body>

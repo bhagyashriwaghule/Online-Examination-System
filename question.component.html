@@ -1,0 +1,38 @@
+<html>
+
+
+<body>
+    <h2>Question Paper</h2>
+    <img style="position: absolute;top: 150px;right: 100px"src="assets/images/images1.jpg"width="100px height=100px">
+<span style="color: red;position:fixed;top:45px;right: 20px;">{{durationMessage}}</span>
+
+<p><strong>welcome {{username}}</strong></p>
+<div style="margin-left: 100px;">
+<form name="questionForm">
+    
+    <input type="text"  name="qno" [(ngModel)]="question.qno"style="background-color: gray; border: none;" ><br><br>
+    <input type="text"   name="qtext" [(ngModel)]="question.qtext" size="50px" style="background-color: gray; border: none;"><br><br>
+    
+    <br><br>
+      
+    <input  name="options" type="radio" [checked]="compare2(question.op1)"  (change)="saveAnswer()" [value]="question.op1" [(ngModel)]="submittedAnswer" class="css-checkbox"[(ngModel)]="selected" name="radioModel"><span [style.color]="compare(question.op1)">{{question.op1}}</span><br><br>
+    <input  name="options" type="radio" [checked]="compare2(question.op2)" (change)="saveAnswer()" [value]="question.op2" [(ngModel)]="submittedAnswer" class="css-checkbox"  [(ngModel)]="selected" name="radioModel"><span [style.color]="compare(question.op2)">{{question.op2}}</span><br><br> 
+    <input  name="options" type="radio" [checked]="compare2(question.op3)" (change)="saveAnswer()" [value]="question.op3" [(ngModel)]="submittedAnswer" class="css-checkbox" [(ngModel)]="selected" name="radioModel"><span [style.color]="compare(question.op3)">{{question.op3}}</span><br><br> 
+    <input  name="options" type="radio" [checked]="compare2(question.op4)" (change)="saveAnswer()" [value]="question.op4" [(ngModel)]="submittedAnswer" class="css-checkbox" [(ngModel)]="selected" name="radioModel"><span [style.color]="compare(question.op4)">{{question.op4}}</span><br><br>
+
+
+    <input  type="hidden" name="originalAnswer" [(ngModel)]="question.answer"><br><br>
+
+    <input type="button" value="next" (click)="nextQuestion()"class="btn">
+
+    <input type="button" value="previous" (click)="previousQuestion()"style="margin-left:20px;"class="btn">
+
+    <input type="button" value="endexam" (click)="endexam()" style="margin-left: 20px;"class="btn" >    
+
+</form>
+</div>
+
+
+</body>
+
+</html>
