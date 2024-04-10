@@ -4,16 +4,16 @@ The online examination system project in Java is designed to facilitate the admi
 
 Technologies Used:
 
-Java : Core programming language for development.
+Implemented core functionalities and business logic using Java programming language.
 
-Hibernate : Object-relational mapping for simplified database interactions.
+Used Hibernate for object-relational mapping to simplify database interactions.
 
-Spring : Infrastructure support for managing components and implementing business logic.
+Designed and implemented a RESTful API for seamless communication between client and server using Spring Boot Framework.
 
-Spring Boot : Streamlined development of production-ready applications.
+Used MYSQL for database management, including schema design and query optimization and storing
 
-REST API : Enables standardized and scalable communication between components.
+exam related data.
 
-Postman : Used for testing and documenting the REST API.
+Used Angular Framework for creating user interface and displaying questions dynamically on the client side.
 
 These technologies collectively contribute to a robust and efficient Online Examination System.
